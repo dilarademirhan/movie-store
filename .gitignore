@@ -10,4 +10,7 @@ obj/
 /node_modules
 /wwwroot/node_modules
 
+# Visual Studio 2015/2017 cache/options directory
+.vs/
+
 # End of https://www.toptal.com/developers/gitignore/api/dotnetcore
