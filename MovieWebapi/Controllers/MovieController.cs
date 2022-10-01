@@ -7,15 +7,8 @@ namespace MovieWebapi.AddControllers{
     [ApiController] // bu controller bir HTTP response dönecek 
     [Route("[controller]s")]
     public class MovieController : ControllerBase {
-        // static olması gerekiyor çünkü uygulama çalıştığı sürece yaşamalı ve uygulama sonlandığında lifecycle sona ermeli.
         private static List<Movie> MovieList = new List<Movie>(){
-            new Movie {
-                Id =  1,
-                Title = "The Lobster",
-                Year = 2015,
-                GenreId = 1, //Drama
-                DirectorId = 1, //Yorgos Lanthimos
-            }
+            
         };
 
         [HttpGet]
