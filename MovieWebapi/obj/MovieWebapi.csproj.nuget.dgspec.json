@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\denemeler\\.net\\movie-project\\MovieWebapi\\MovieWebapi.csproj": {}
+    "C:\\denemeler\\.net\\movie-project\\MovieWebapi\\MovieWebapi.csproj": {}
   },
   "projects": {
-    "c:\\denemeler\\.net\\movie-project\\MovieWebapi\\MovieWebapi.csproj": {
+    "C:\\denemeler\\.net\\movie-project\\MovieWebapi\\MovieWebapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\denemeler\\.net\\movie-project\\MovieWebapi\\MovieWebapi.csproj",
+        "projectUniqueName": "C:\\denemeler\\.net\\movie-project\\MovieWebapi\\MovieWebapi.csproj",
         "projectName": "MovieWebapi",
-        "projectPath": "c:\\denemeler\\.net\\movie-project\\MovieWebapi\\MovieWebapi.csproj",
+        "projectPath": "C:\\denemeler\\.net\\movie-project\\MovieWebapi\\MovieWebapi.csproj",
         "packagesPath": "C:\\Users\\dilara\\.nuget\\packages\\",
-        "outputPath": "c:\\denemeler\\.net\\movie-project\\MovieWebapi\\obj\\",
+        "outputPath": "C:\\denemeler\\.net\\movie-project\\MovieWebapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dilara\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,18 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
