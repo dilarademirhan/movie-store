@@ -1,15 +1,10 @@
+using System;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace MovieWebapi {
     public class Movie
     {
-        // public Movie(int id, string title, int year, int genreId, string director, double price) 
-        // {
-        //     this.Id = id;
-        //     this.Title = title;
-        //     this.Year = year;
-        //     this.GenreId = genreId;
-        //     this.Director = director;
-        //     this.price = price;
-        // }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
         public int Id { get; set; }
 

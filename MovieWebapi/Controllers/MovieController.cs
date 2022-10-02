@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using MovieWebapi.DBOperations;
+using MovieWebapi.MovieOperations.GetMovies;
 
 namespace MovieWebapi.AddControllers{
     [ApiController] // bu controller bir HTTP response dönecek 
@@ -16,10 +17,13 @@ namespace MovieWebapi.AddControllers{
         }
 
         [HttpGet]
-        public List<Movie> GetMovies()
+        public IActionResult GetMovies()
         {
-            var movieList = _context.Movies.OrderBy(x => x.Id).ToList<Movie>();
-            return movieList;
+            GetMoviesQuery query = new GetMoviesQuery(_context);
+            var result = query.Handle();
+            return Ok(result);
+            // var movieList = _context.Movies.OrderBy(x => x.Id).ToList<Movie>();
+            // return movieList;
         }
 
         [HttpGet("{id}")]
